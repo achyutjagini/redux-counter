@@ -14,10 +14,21 @@ reducers:{
     },
     decrement:(state)=>{
         state.count-=1
+    },
+
+    reset:(state)=>{
+        state.count=0;
+
+    },
+
+    incrementByAmount:(state)=>{
+        
     }
+
+
 }
 })
 
 export const {increment,decrement}=counterSlice.actions;
-expport default counterSlice.reducer;
+export default counterSlice.reducer;
 

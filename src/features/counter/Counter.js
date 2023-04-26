@@ -16,8 +16,8 @@ const Counter = () => {
     <p>{count}</p>
    <div>
    <button onClick={()=>dispatch(increment())}> + </button>
-   <button> - </button>
-   
+   <button onClick={()=>dispatch(decrement())}> - </button>
+
    </div>
 
 
