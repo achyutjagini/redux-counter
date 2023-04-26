@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 5rem;
+  display: grid;
+  place-content: center;
+}
+
+input,
+button {
+  font: inherit;
+  padding: 0.5rem;
+}
+
+/*
+display: flex; sets the display property of the section element to flex, which turns the section element into a flex container.
+
+flex-direction: column; sets the direction of the main axis in the flex container to be vertical, which means that the flex items inside the section will be stacked on top of each other from top to bottom.
+
+justify-content: center; centers the flex items along the vertical axis, which is the opposite axis to the one specified by the flex-direction property. In this case, it centers the items in the center of the section element.
+
+align-items: center; centers the flex items 
+along the horizontal axis, which is the horizon axis (if flex-direction is column)
+as the one specified by the flex-direction property. 
+In this case, it centers the items in the center of the section element.*/
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  text-align: center;
+  max-width: 2.5em;
+}
+
+button {
+  font-size: 2rem;
+  margin: 0.5em 0 0.5em 0.5em;
+  min-width: 2em;
+}
+
+button:first-child {
+  margin-left: 0;
+}
