@@ -3,6 +3,31 @@
   padding: 0;
   box-sizing: border-box;
 }
+/*
+This is a CSS code snippet that applies some styling rules to the body element 
+of an HTML document.
+
+The min-height property sets the minimum height of the body element to 100% of
+the viewport height, ensuring that the element takes up at least the full height of the screen.
+
+The font-size property sets the font size for all text content inside the body
+element to 5 rem, which is a relative unit based on the font size of the root element.
+
+The display property sets the display mode for the body element to grid, which 
+allows it to be positioned using CSS grid layout.
+
+The place-content property is a shorthand property for setting both align-content 
+and justify-content properties of the CSS grid. In this case, it centers the
+content of the body element both horizontally and vertically.
+
+rem is a relative unit of length in CSS that stands for "root em". The font-size property set
+ to 5rem means that the font size of all text content inside the body element will be se
+ t to 5 times the font size of the root element.
+
+For example, if the font-size of the root element is set to 16 pixels, then 5rem will be 
+equivalent to 80px (5 * 16px). If the font-size of the root element is set to a 
+different value, the 5rem will be calculated accordingly.
+*/
 
 body {
   min-height: 100vh;
@@ -22,18 +47,20 @@ display: flex; sets the display property of the section element to flex, which t
 
 flex-direction: column; sets the direction of the main axis in the flex container to be vertical, which means that the flex items inside the section will be stacked on top of each other from top to bottom.
 
-justify-content: center; centers the flex items along the vertical axis, which is the opposite axis to the one specified by the flex-direction property. In this case, it centers the items in the center of the section element.
+justify-content: center; centers the flex items along the main axis, which is the axis to the one specified by the flex-direction property. In this case, 
+it centers the items in the center of the section element.
 
 align-items: center; centers the flex items 
-along the horizontal axis, which is the horizon axis (if flex-direction is column)
+along the cross axis, which is the horizon axis (if flex-direction is column)
 as the one specified by the flex-direction property. 
 In this case, it centers the items in the center of the section element.*/
 
 section {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  /*justify-content: center;
+  align-items: center;*/
+  place-content: center;
 }
 
 input {
