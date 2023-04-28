@@ -58,9 +58,9 @@ In this case, it centers the items in the center of the section element.*/
 section {
   display: flex;
   flex-direction: column;
-  /*justify-content: center;
-  align-items: center;*/
-  place-content: center;
+  justify-content: center;
+  align-items: center;
+  /*place-content: center;*/
 }
 
 input {
